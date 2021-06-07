@@ -1,0 +1,6 @@
+3600;port number
+127.0.0.1;ip
+"http://127.0.1.1:8000/";http_url
+ws://127.0.1.1:9998;websocket_url
+/home/os2018202001/Desktop/TEST/Server/;srv_localpath
+
