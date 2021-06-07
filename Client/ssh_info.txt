@@ -1,0 +1,3 @@
+jiwon;username
+0000;password
+22;ssh_port
