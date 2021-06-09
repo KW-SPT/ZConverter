@@ -1,0 +1,16 @@
+[Unit]
+Description=Main Server daemon
+
+[Service]
+Type=forking
+User=root
+Group=root
+
+ExecStart=/home/sujin/Desktop/AgentForLinux/server/execfile/mainDaemon
+WorkingDirectory=/home/sujin/Desktop/AgentForLinux/server/execfile
+
+#PIDFile=/var/run/daemon/mainDaemon.pid
+
+[Install]
+WantedBy=multi-user.target
+

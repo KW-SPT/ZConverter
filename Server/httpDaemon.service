@@ -1,0 +1,13 @@
+[Unit]
+Description=Http Server daemon 
+
+[Service]
+Type=forking
+User=root
+Group=root
+
+ExecStart=/home/sujin/Desktop/AgentForLinux/server/execfile/httpDaemon
+WorkingDirectory=/home/sujin/Desktop/AgentForLinux/server/execfile
+
+[Install]
+WantedBy=multi-user.target

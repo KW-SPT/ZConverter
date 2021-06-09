@@ -1,0 +1,14 @@
+[Unit]
+Description=Websocket Server daemon
+
+[Service]
+Type=forking
+User=root
+Group=root
+
+ExecStart=/home/sujin/Desktop/AgentForLinux/server/execfile/websocketDaemon
+WorkingDirectory=/home/sujin/Desktop/AgentForLinux/server/execfile
+
+
+[Install]
+WantedBy=multi-user.target
