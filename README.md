@@ -5,7 +5,7 @@
 ### 시나리오1
 
 **client**  
-*cli_option.txt* - 클라이언트 옵션 설정용 텍스트파일  
+    *cli_option.txt* - 클라이언트 옵션 설정용 텍스트파일  
 *client.c* - 리눅스 클라이언트 C 파일  
 *client_demon.c* - 리눅스 클라이언트 (데몬버전)  
 *pyEXE_cli.tar.gz* - 파이썬 실행파일 압축  
