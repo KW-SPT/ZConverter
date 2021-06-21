@@ -85,6 +85,7 @@
   	*ssh_info.txt*
   	: ssh 계정 정보(사용자 이름, 패스워드, 포트)를 기록한 txt파일
 
+
 **Server/**
 : 서버 관련 파일들이 있는 폴더
 	**Linux/**
@@ -144,6 +145,7 @@
    		- WorkingDirectory=실행할 파일이 위치한 폴더 절대 경로 (실행파일명 포함 x)
   	*wh_path.txt*
   	: http 서버(실행파일), websockek 서버(실행파일) 경로 
+	
 
 **install_script/**
 	*Client.tar.gz*
@@ -154,6 +156,7 @@
 	: 사용자의 입력을 받아 cli_option.txt, ssh_info.txt를 생성하고 이들과 클라이언트용 파이썬 실행파일의 압축파일을 Client라는 폴더를 생성하여 그 안으로 이동 및 압축을 해제하여 클라이언트 실행환경을 구성하는 설치 스크립트
 	*server_exe.sh*
 	: 사용자의 입력을 받아 define.txt와 new.txt를 생성하고, 이들과 파이썬 실행파일의 압축파일을 srv_localpath에 이동 및 압축 해제하는 설치 스크립트
+	
 
 **scenario2/**
 : 시나리오2
@@ -179,7 +182,8 @@
 		: 오류가 있는 버전의 사용자들에게 메시지를 보냄
     		*update.txt*
     		: 시나리오 1에서 생성한 클라이언트 목록 텍스트 파일
-
+		
+		
 **errorcode.txt**
 : 에러코드 설명
 
