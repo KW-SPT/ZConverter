@@ -57,21 +57,21 @@
 
 ### 폴더 및 파일 소개
 **Client/**
-: 클라이언트 관련 파일들이 있는 폴더
-	**python code/**
-	: 클라이언트의 파일 다운로드 관련 파일이 있는 폴더
-		*hash.py*
-		: SHA-256 검사
-		*http_cli.py*
-		: http 프로토콜 클라이언트
-		*websocket_cli.py*
-		: websocket 클라이언트
-	*cli.cpp*
-	: Windows 사용자의 메인 클라이언트
-	*cli_option.txt*
-	: 클라이언트 옵션(인자) 설정용 텍스트 파일. 줄 단위로 정보 입력
-   		- 첫줄 : 접속할 서버의  ip
-   		- 두번째 : 접속할 서버의 port
+: 클라이언트 관련 파일들이 있는 폴더  
+	**python code/**  
+	: 클라이언트의 파일 다운로드 관련 파일이 있는 폴더  
+		*hash.py*  
+		: SHA-256 검사  
+		*http_cli.py*  
+		: http 프로토콜 클라이언트  
+		*websocket_cli.py*  
+		: websocket 클라이언트  
+	*cli.cpp*  
+	: Windows 사용자의 메인 클라이언트  
+	*cli_option.txt*  
+	: 클라이언트 옵션(인자) 설정용 텍스트 파일. 줄 단위로 정보 입력  
+   		- 첫줄 : 접속할 서버의  ip  
+   		- 두번째 : 접속할 서버의 port  
    		- 세번째 : 새로운 버전을 다운받고 싶다면 new를 특정 버전을 원한다면 특정 버전을 입력
    		- 네번째 : 다운받을 프로토콜 방식(https, websocket, ssh)
    		- 다섯번째 : 클라이언트가 파일을 다운받을 경로
