@@ -1,0 +1,46 @@
+<server log>
+	1. 연결 에러
+		- 연결이 끊겼을 때 : E100 - Connection lost
+	2. 전송 에러
+		- 버전 전송 실패 : E201 - Fail to send version
+		- 구조체 전송 실패 : E202 - Fail to send struct
+	3. 서버 오류
+		- 요청받은 버전이 클라이언트 측에 존재할 때 : E401 - You already have file
+		- 요청받은 버전이 서버에 존재하지 않을 때 : E402 - Server dosen't have file
+		- 요청받은 버전이 뭔가 이상할 때 : E403 - Wrong version!
+	4. 전송 성공
+		- 전체 전송 성공했을 때 : S777
+	5. allHashsum.txt
+
+<client log>
+	1. 클라이언트 오류
+		- 입력한 인자의 개수가 많을 때 : E301 - Too many factors
+		- 입력한 인자의 개수가 적을 때 : E302 - You need to more factors
+		- 입력한 인자가 올바르지 않을 때 : E304 - Wrong factors! <ip> <port_num> <version> <protocol> <path> <cli_port>
+
+<주고받는 메세지 코드>
+	1. server write
+		- 파일 이름 (hash_srv)
+		- cli_cmd (send_https, send_websocket)
+		- "ssh start" (send_ssh) -> PS001
+		- nothing_2 (구조체 전송 오류) -> E202
+		- nothing_3 (ssh 구조체 전송 오류) -> ES202
+		- 최신 버전 정보 (new 대신 숫자 버전으로)
+		- "no version" (없는 버전을 클라이언트가 요구한 경우) -> V404
+		- "yes version" (클라이언트가 요구한 버전이 있는 경우) -> V777
+		- "right" (hash가 일치하는 경우) -> HS777
+		- "wrong" (hash가 불일치하는 경우) -> HS100
+		- 클라이언트에 파일이 없어서 hash 검사를 못한 경우 -> HS404
+		- "end of file" (전송할 파일 목록이 끝난 경우) -> FE100
+
+
+	2. client write
+		- cli_sha256 (계산한 해시값 전송)
+		- "ok" (new 버전 성공적으로 전송 받은 경우) -> VN777
+		- "no exist" (cli_sha256, 저장경로에 없는 파일인 경우) -> C404
+		- "no file name" (cli_sha256, 서버로부터 파일 이름이 안 온 경우) -> C500
+		- "next" (해시값이 일치하는 경우) -> HS777
+		- "ready" (해시값이 불일치하는 경우) -> HS100
+		- 클라이언트에 파일이 없어서 hash 검사를 못한 경우 -> HS404
+		- "ssh cli success" (ssh cmd가 실행된 경우 -> ssh_start를 서버로부터 받은 경우) -> PS001
+		- "success" (http나 websocket cmd를 받아서 실행시킨 경우) -> C777
