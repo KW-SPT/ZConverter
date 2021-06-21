@@ -1,6 +1,5 @@
 192.168.1.88
 3600
-execute
 https
 /home/os2018202001/path/
 1200
