@@ -4,22 +4,22 @@
 
 ### 시나리오1
 
-**client**
-*cli_option.txt* - 클라이언트 옵션 설정용 텍스트파일
-*client.c* - 리눅스 클라이언트 C 파일
-*client_demon.c* - 리눅스 클라이언트 (데몬버전)
-*pyEXE_cli.tar.gz* - 파이썬 실행파일 압축
-*hash.py* - 해시검사용 파이썬 파일
-*http_cli.py* - http 프로토콜 클라이언트 파이썬 파일
-*websocket_cli.py* - websocket 프로토콜 클라이언트
-*ssh_info.txt* - ssh 프로토콜용 텍스트파일
-*cli.cpp* - 윈도우 클라이언트 C++ 파일
+**client**  
+*cli_option.txt* - 클라이언트 옵션 설정용 텍스트파일  
+*client.c* - 리눅스 클라이언트 C 파일  
+*client_demon.c* - 리눅스 클라이언트 (데몬버전)  
+*pyEXE_cli.tar.gz* - 파이썬 실행파일 압축  
+*hash.py* - 해시검사용 파이썬 파일  
+*http_cli.py* - http 프로토콜 클라이언트 파이썬 파일  
+*websocket_cli.py* - websocket 프로토콜 클라이언트  
+*ssh_info.txt* - ssh 프로토콜용 텍스트파일  
+*cli.cpp* - 윈도우 클라이언트 C++ 파일  
 
 
 **server**
-*Linux* - 리눅스용 전송파일 리포지토리
-*Windows* - 윈도우용 전송파일 리포지토리
-*define.txt* - 메인 서버 옵션 설정용 텍스트파일
+*Linux* - 리눅스용 전송파일 리포지토리  
+*Windows* - 윈도우용 전송파일 리포지토리  
+*define.txt* - 메인 서버 옵션 설정용 텍스트파일  
 *pyEXE_srv.tar.gz* - 서버에서 사용되는 파이썬용 실행파일 압축
 *server.c* - 메인 서버 C코드
 *server_daemon.c* - 메인서버 실행파일용 코드 (mainDaemon.c에 있는 코드)
