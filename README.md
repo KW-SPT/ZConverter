@@ -1,6 +1,9 @@
 # ZConverter
 2020년 광운대학교 산학연계 SW프로젝트 SPT팀 repository
 
+### 참고 자료
+보고서 : https://drive.google.com/file/d/1_2QwvDewScx5k_9HSbcMBhb2Ss-074Tb/view?usp=sharing
+시연 영상 : https://youtu.be/nKvJV_q1wUw
 
 ### 시나리오1
 
